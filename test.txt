@@ -1,0 +1,12 @@
+c = get_config()
+# Kernel config
+c.IPKernelApp.pylab = 'inline' # if you want plotting support always in your notebook
+# Notebook config
+c.NotebookApp.certfile = u'/home/ubuntu/certs/mycert.pem' #location of your certificate file
+c.NotebookApp.keyfile = u'/home/ubuntu/certs/mycert.key' #location of your certificate key
+c.NotebookApp.ip = '*'
+
+c.NotebookApp.open_browser = False #so that the ipython notebook does not opens up a browser by default
+c.NotebookApp.password = u'b95aa938b816:02ada720eb9e52a71b6601c2ab31f9de1ba93fb9' #the encrypted password we generated above
+# It is a good idea to put it on a known, fixed port
+c.NotebookApp.port = 8888
